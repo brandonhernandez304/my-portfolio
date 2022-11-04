@@ -1,5 +1,12 @@
-import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import Head from 'next/head';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { AiFillLinkedin } from 'react-icons/ai';
+import Image from 'next/image';
+import headshot from '../public/headshot.jpeg';
+import proj1 from '../public/proj-1.png';
+import proj3 from '../public/proj-3.png';
+import proj4 from '../public/proj-4.png';
+
 
 export default function Home() {
   return (
@@ -13,18 +20,46 @@ export default function Home() {
       <main className='bg-white px-10'>
         <section className="min-h-screen">
           <nav className='py-10 mb-12 flex justify-between'>
-          <h1 className='text-xl font-mono'>Brandon Hernandez</h1>
-          <ul className='flex items-center'>
-            <li>
-              <BsFillMoonStarsFill className='cursor-pointer text-xl'/>
-            </li>
-            <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
-          </ul>
+            <h1 className='text-xl font-mono'>Brandon Hernandez</h1>
+            <ul className='flex items-center'>
+              <li>
+                <BsFillMoonStarsFill className='cursor-pointer text-xl' />
+              </li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
+            </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Brandon Hernandez</h2>
+            <h3 className='text-3xl py-2'>Full-Stack Engineer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800'>Personal Trainer turned full-stack software engineer.</p>
+          </div>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+          <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
+          </div>
+          <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden'>
+            <Image src={headshot} layout='fill' objectFit='cover' />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>More about me</h3>
+            <p className='text-md py-2 leading-8 text-gray-80'>
+              <span className="text-teal-500">Queens, NY</span> native with love for all things <span className="text-teal-500">tech</span>, <span className="text-teal-500">fitness</span>, and everywhere in between. 
+              Thanks for stopping by! Feel free to reach me through my 
+              <span className="text-teal-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin</a></span>, 
+              always open to connecting and learning from others!
+            </p>
+          </div>
+          <div className='flex justify-content'>
+            <div className='flex'>
+              <Image  src={proj4} />
+              <Image  src={proj3} />
+              <Image  src={proj1} />
+
+            </div>
+          </div>
         </section>
       </main>
-
-   
     </div>
   )
 }
