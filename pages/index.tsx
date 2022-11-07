@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { FaGithubSquare } from 'react-icons/fa';
 import { BsKeyboard } from 'react-icons/bs';
 import Image from 'next/image';
 import headshot from '../public/headshot.jpeg';
@@ -100,19 +101,28 @@ export default function Home() {
               <a href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj1} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
-              <p><a href="https://github.com/brandonhernandez304/Project-1-Comic-Characters" target="_blank" rel="noopener noreferrer">Comic Characters</a></p>
+              <h2 className="text-teal-500 text-4xl py-1 text-center">Comic Characters</h2>
+                <div className='text-5xl flex justify-center text-gray-600'>
+                  <a href="https://github.com/brandonhernandez304/Project-1-Comic-Characters" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
+                </div>
             </div>   
             <div className='basis-1/4 flex-1'>
               <a href="https://vibe-voyage.netlify.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj3} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
-              <p><a href="https://github.com/brandonhernandez304/VibeVoyage-frontend" target="_blank" rel="noopener noreferrer">Vibe Voyage, a colaborative project</a></p>
+              <h2 className="text-teal-500 text-4xl py-1 text-center">Vibe Voyage</h2>
+                <div className='text-5xl flex justify-center text-gray-600'>
+                  <a href="https://github.com/brandonhernandez304/VibeVoyage-frontend" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
+                </div>      
             </div>
             <div className='basis-1/4 flex-1'>
               <a href="https://neopets-ga-proj4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Image src={proj4} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
-              <p className="hover:text-blue"><a className="hover:text-blue" href="https://github.com/brandonhernandez304/neopets_mockup" target="_blank" rel="noopener noreferrer">Neopets mockup</a></p>
+              <h2 className="text-teal-500 text-4xl py-1 text-center">Neopets Mockup</h2>
+                <div className='text-5xl flex justify-center text-gray-600'>
+                  <a href="https://github.com/brandonhernandez304/neopets_mockup" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
+                </div>
             </div>
           </div>
         </section>
@@ -123,6 +133,7 @@ export default function Home() {
             <p>brandonahernandez304@gmail.com</p>
             <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
           <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
+          <a href="https://github.com/brandonhernandez304" target="_blank" rel="noopener noreferrer">< AiFillGithub /></a>
           </div>
           </div>
         </section>
