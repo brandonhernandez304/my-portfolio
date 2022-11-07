@@ -42,8 +42,8 @@ export default function Home() {
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
           <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
           </div>
-          <div>
-            <Image src={headshot} className='relative mx-auto rounded-full w-60 h-80 mt-20  md:h-96 md:w-96'  />
+          <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+            <Image src={headshot} alt='headshot' layout="fill" objectFit='cover' />
           </div>
         </section>
         <section>
