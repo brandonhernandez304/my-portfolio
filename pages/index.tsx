@@ -55,16 +55,16 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-center text-3xl py-1 dark:text-white'>More about me</h3>
-            <p className='text-md text-center py-2 leading-8 text-gray-80 dark:text-white'>
+            <p className='text-md min-w-fit text-center py-2 leading-8 text-gray-80 dark:text-white'>
               <span className="text-amber-500">Queens, NY</span> native with love for all things <span className="text-amber-500">tech</span>, <span className="text-amber-500">fitness</span>, and everywhere in between. 
               Thanks for stopping by! Feel free to reach me through my 
               <span className="text-amber-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin</a></span>, 
               always open to connecting and learning from others!
             </p>
           </div>
-          <div className='lg:flex gap-10 justify-center'>
-            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-auto justify-center align-center text-slate-500 dark:text-amber-200" size={100} />
+          <div className='lg:flex items-stretch gap-10 justify-center'>
+            <div className='justify-center text-center w-full shadow-lg p-10 rounded-xl my-10'>
+              <BsKeyboard className="mx-auto justify-center align-center min-w-screen text-slate-500 dark:text-amber-200" size={100} />
               <div className="dark:text-white">
               <h3 className='text-2xl py-1'>Languages</h3>
               <p>Javascript</p>
@@ -74,7 +74,7 @@ export default function Home() {
               <p>Markdown</p>
               </div>
             </div>
-            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='justify-center text-center w-full shadow-lg p-10 rounded-xl my-10'>
               <HiOutlineLibrary className="mx-auto justify-center align-center text-slate-500 dark:text-amber-200" size={100} />
               <div className="dark:text-white">
               <h3 className='text-2xl py-1'>Libraries and Frameworks</h3>
@@ -88,7 +88,7 @@ export default function Home() {
               <p>Materialize CSS</p>
               </div>
             </div>
-            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='justify-center text-center w-full shadow-lg p-10 rounded-xl my-10'>
               <VscHeart className="mx-auto justify-center align-center text-slate-500 dark:text-amber-200" size={100} />
               <div className="dark:text-white">
               <h3 className='text-2xl py-1'>Interests</h3>
