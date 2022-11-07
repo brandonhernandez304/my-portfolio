@@ -8,6 +8,8 @@ import proj1 from '../public/proj-1.png';
 import proj3 from '../public/proj-3.png';
 import proj4 from '../public/proj-4.png';
 import { useState } from "react";
+import type { ImageLoaderProps } from 'next/image';
+
 
 export default function Home() {
   const[darkMode, setDarkMode] = useState(false);
@@ -40,8 +42,8 @@ export default function Home() {
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
           <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
           </div>
-          <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={headshot} alt="headshot" layout='fill' objectFit='cover' />
+          <div>
+            <Image src={headshot} className='relative mx-auto rounded-full w-60 h-80 mt-20  md:h-96 md:w-96'  />
           </div>
         </section>
         <section>
