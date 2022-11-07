@@ -52,6 +52,7 @@ export default function Home() {
             <Image src={headshot} alt='headshot' layout="fill" objectFit='cover' />
           </div>
         </section>
+
         <section>
           <div>
             <h3 className='text-center text-3xl py-1 dark:text-white'>More about me</h3>
@@ -62,6 +63,7 @@ export default function Home() {
               always open to connecting and learning from others!
             </p>
           </div>
+
           <div className='lg:flex items-stretch gap-10 justify-center'>
             <div className='justify-center text-center w-full shadow-lg p-10 rounded-xl my-10'>
               <BsKeyboard className="mx-auto justify-center align-center min-w-screen text-slate-500 dark:text-amber-200" size={100} />
@@ -101,6 +103,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section>
           <div>
           <h3 className='text-center text-3xl py-1 dark:text-white'>Projects</h3>
@@ -110,30 +113,31 @@ export default function Home() {
             on their images to be taken to their deployed sites. Github source code locations are listed beneath each one.
             </p>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <div className='basis-1/4 flex-1'>
+          
+          <div className='flex flex-col items-stretch gap-10 py-10 lg:flex-row lg:flex'>
+          <div className='flex-1 justify-center text-center h-full my-1 hover:basis-1/4 ease-out duration-300'>
               <a href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
-              <Image src={proj1} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
+              <Image src={proj1} alt="project1" className='rounded-lg object-cover py-5 ' width={100} height={100} layout="responsive"/>
               </a>
-              <h2 className="text-amber-500 text-4xl py-1 text-center">Comic Characters</h2>
+              <h2 className="text-amber-500 text-4xl py-auto text-center">Comic Characters</h2>
                 <div className='text-5xl flex justify-center text-gray-600 dark:text-slate-300'>
                   <a href="https://github.com/brandonhernandez304/Project-1-Comic-Characters" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
                 </div>
             </div>   
-            <div className='basis-1/4 flex-1'>
+            <div className='flex-1 justify-center text-center h-full my-1 hover:basis-1/4 ease-out duration-300'>
               <a href="https://vibe-voyage.netlify.app/" target="_blank" rel="noopener noreferrer">
-              <Image src={proj3} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
+              <Image src={proj3} alt="project3" className='rounded-lg object-cover py-5 ' width={100} height={100} layout="responsive"/>
               </a>
-              <h2 className="text-amber-500 text-4xl py-1 text-center">Vibe Voyage</h2>
+              <h2 className="text-amber-500 text-4xl py-auto text-center">Vibe Voyage</h2>
                 <div className='text-5xl flex justify-center text-gray-600 dark:text-slate-300'>
                   <a href="https://github.com/brandonhernandez304/VibeVoyage-frontend" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
                 </div>      
             </div>
-            <div className='basis-1/4 flex-1'>
+            <div className='flex-1 justify-center text-center hover:basis-1/4 ease-out duration-300'>
               <a href="https://neopets-ga-proj4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-              <Image src={proj4} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
+              <Image src={proj4} alt="project4" className='rounded-lg py-5 ' width={100} height={100} layout="responsive"/>
               </a>
-              <h2 className="text-amber-500 text-4xl py-1 text-center">Neopets Mockup</h2>
+              <h2 className="text-amber-500 text-4xl py-auto text-center">Neopets Mockup</h2>
                 <div className='text-5xl flex justify-center text-gray-600 dark:text-slate-300'>
                   <a href="https://github.com/brandonhernandez304/neopets_mockup" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
                 </div>
