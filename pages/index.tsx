@@ -11,7 +11,7 @@ import proj1 from '../public/proj-1.png';
 import proj3 from '../public/proj-3.png';
 import proj4 from '../public/proj-4.png';
 import { useState } from "react";
-import resume from '../public/resume.pdf';
+
 import type { ImageLoaderProps } from 'next/image';
 
 
