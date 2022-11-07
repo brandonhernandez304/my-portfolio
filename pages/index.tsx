@@ -31,16 +31,13 @@ export default function Home() {
                 className='cursor-pointer text-xl' 
                 />
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
+              <li><a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Brandon Hernandez</h2>
             <h3 className='text-3xl py-2 md:text-3xl'>Full-Stack Engineer</h3>
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Personal Trainer turned full-stack software engineer.</p>
-          </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-          <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
           </div>
           <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={headshot} alt='headshot' layout="fill" objectFit='cover' />
@@ -56,29 +53,19 @@ export default function Home() {
               always open to connecting and learning from others!
             </p>
           </div>
-          <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard size={100} color={"grey"} />
-              <h3>Skills</h3>
+          <div className='lg:flex gap-10 justify-center'>
+            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
+              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <h3 className='text-2xl py-1'>Languages</h3>
               <p>Javascript</p>
               <p>Python</p>
               <p>HTML</p>
               <p>CSS</p>
-              <p>Node</p>
-              <p>Express</p>
-              <p>React</p>
-              <p>Django</p>
-              <p>Tailwind CSS</p>
-              <p>PostgreSQL</p>
-              <p>MongoDB</p>
+              <p>Markdown</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard size={100} color={"grey"} />
-              <h3>Skills</h3>
-              <p>Javascript</p>
-              <p>Python</p>
-              <p>HTML</p>
-              <p>CSS</p>
+            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
+              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <h3 className='text-2xl py-1'>Libraries and Frameworks</h3>
               <p>Node</p>
               <p>Express</p>
               <p>React</p>
@@ -86,21 +73,16 @@ export default function Home() {
               <p>Tailwind CSS</p>
               <p>PostgreSQL</p>
               <p>MongoDB</p>
+              <p>Materialize CSS</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard size={100} color={"grey"} />
-              <h3>Skills</h3>
-              <p>Javascript</p>
-              <p>Python</p>
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>Node</p>
-              <p>Express</p>
-              <p>React</p>
-              <p>Django</p>
-              <p>Tailwind CSS</p>
-              <p>PostgreSQL</p>
-              <p>MongoDB</p>
+            <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
+              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <h3 className='text-2xl py-1'>Interests</h3>
+              <p>Up-to-date tech and coding practices </p>
+              <p>Front-end web development</p>
+              <p>Health and fitness</p>
+              <p>Marketing</p>
+              <p>Gaming</p>
             </div>
           </div>
 
@@ -120,20 +102,39 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray-80'>
               <span className="text-teal-500">Queens, NY</span> native with love for all things <span className="text-teal-500">tech</span>, <span className="text-teal-500">fitness</span>, and everywhere in between. 
               Thanks for stopping by! Feel free to reach me through my 
-              <span className="text-teal-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin</a></span>, 
+              <span className="text-teal-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin </a></span>, 
               always open to connecting and learning from others!
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1 group-hover:blur'>
+              <a className="relative group" href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <Image src={proj1} alt="project" className='absolute inset-0 rounded-lg object-cover hover:opacity-50 hover:blur' width={100} height={100} layout="responsive"/>
+                  <div className="transition-all transform opacity-0 group-hover:opacity-100 justify-center text-center text-3xl py-1 text-white">
+                    <h2>Click to see my Comic Characters project!</h2>
+                </div>
+              </a>
+            </div>     
             <div className='basis-1/3 flex-1'>
-              <Image src={proj1} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
-            </div>
-            <div className='basis-1/3 flex-1'>
+              <a href="https://vibe-voyage.netlify.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj3} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
+              </a>
             </div>
             <div className='basis-1/3 flex-1'>
+              <a href="https://neopets-ga-proj4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Image src={proj4} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
+              </a>
             </div>
+          </div>
+        </section>
+        <section>
+        <div className="justify-center text-center">
+            <h3 className='text-3xl py-1'>Contact Me!</h3>
+            <h4>Email:</h4>
+            <p>brandonahernandez304@gmail.com</p>
+            <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+          <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
+          </div>
           </div>
         </section>
       </main>
