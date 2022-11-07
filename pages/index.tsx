@@ -85,45 +85,34 @@ export default function Home() {
               <p>Gaming</p>
             </div>
           </div>
-
-
-          {/* <div className='flex justify-content'>
-            <div className='flex'>
-              <Image  src={proj4} width={100} height={100} />
-              <Image  src={proj3} />
-              <Image  src={proj1} />
-
-            </div>
-          </div> */}
         </section>
         <section>
           <div>
           <h3 className='text-3xl py-1'>Projects</h3>
             <p className='text-md py-2 leading-8 text-gray-80'>
-              <span className="text-teal-500">Queens, NY</span> native with love for all things <span className="text-teal-500">tech</span>, <span className="text-teal-500">fitness</span>, and everywhere in between. 
-              Thanks for stopping by! Feel free to reach me through my 
-              <span className="text-teal-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin </a></span>, 
-              always open to connecting and learning from others!
+            Have a look at my deployed projects below! 
+            <span className="text-teal-500"> Click </span>
+            on their images to be taken to their deployed sites. Github source code locations are listed beneath each one.
             </p>
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3 flex-1 group-hover:blur'>
-              <a className="relative group" href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <Image src={proj1} alt="project" className='absolute inset-0 rounded-lg object-cover hover:opacity-50 hover:blur' width={100} height={100} layout="responsive"/>
-                  <div className="transition-all transform opacity-0 group-hover:opacity-100 justify-center text-center text-3xl py-1 text-white">
-                    <h2>Click to see my Comic Characters project!</h2>
-                </div>
+          <div className='basis-1/4 flex-1'>
+              <a href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
+              <Image src={proj1} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
-            </div>     
-            <div className='basis-1/3 flex-1'>
+              <p><a href="https://github.com/brandonhernandez304/Project-1-Comic-Characters" target="_blank" rel="noopener noreferrer">Comic Characters</a></p>
+            </div>   
+            <div className='basis-1/4 flex-1'>
               <a href="https://vibe-voyage.netlify.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj3} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
+              <p><a href="https://github.com/brandonhernandez304/VibeVoyage-frontend" target="_blank" rel="noopener noreferrer">Vibe Voyage, a colaborative project</a></p>
             </div>
-            <div className='basis-1/3 flex-1'>
+            <div className='basis-1/4 flex-1'>
               <a href="https://neopets-ga-proj4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Image src={proj4} alt="project" className='rounded-lg object-cover' width={100} height={100} layout="responsive"/>
               </a>
+              <p className="hover:text-blue"><a className="hover:text-blue" href="https://github.com/brandonhernandez304/neopets_mockup" target="_blank" rel="noopener noreferrer">Neopets mockup</a></p>
             </div>
           </div>
         </section>
