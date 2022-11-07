@@ -32,7 +32,7 @@ export default function Home() {
       </Head>
 
       <main className='bg-white px-10 md:px-20 lg:px-40 bg-stone-100 dark:bg-zinc-800'>
-        <section className="min-h-screen">
+        <section className="min-h-fit">
           <nav className='pt-5 flex justify-between'>
             <h1 className='text-xl font-mono'></h1>
             <ul className='flex items-center'>
