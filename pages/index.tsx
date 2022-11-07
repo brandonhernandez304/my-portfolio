@@ -41,7 +41,7 @@ export default function Home() {
           <a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">< AiFillLinkedin /></a>
           </div>
           <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-            <Image src={headshot} layout='fill' objectFit='cover' />
+            <Image src={headshot} alt="headshot" layout='fill' objectFit='cover' />
           </div>
         </section>
         <section>
