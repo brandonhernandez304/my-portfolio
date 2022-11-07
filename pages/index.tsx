@@ -24,8 +24,8 @@ export default function Home() {
 
       <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className="min-h-screen">
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-mono'>Brandon Hernandez</h1>
+          <nav className='pt-5 flex justify-between'>
+            <h1 className='text-xl font-mono'></h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
@@ -38,16 +38,16 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Brandon Hernandez</h2>
             <h3 className='text-3xl py-2 md:text-3xl'>Full-Stack Engineer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Personal Trainer turned full-stack software engineer.</p>
+            <p className='text-md py-3 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Personal Trainer turned full-stack software engineer.</p>
           </div>
-          <div className='relative mx-auto rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
+          <div className='relative mx-auto rounded-full w-80 h-80 overflow-hidden md:h-96 md:w-96'>
             <Image src={headshot} alt='headshot' layout="fill" objectFit='cover' />
           </div>
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>More about me</h3>
-            <p className='text-md py-2 leading-8 text-gray-80'>
+            <h3 className='text-center text-3xl py-1'>More about me</h3>
+            <p className='text-md text-center py-2 leading-8 text-gray-80'>
               <span className="text-teal-500">Queens, NY</span> native with love for all things <span className="text-teal-500">tech</span>, <span className="text-teal-500">fitness</span>, and everywhere in between. 
               Thanks for stopping by! Feel free to reach me through my 
               <span className="text-teal-500"><a href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer"> Linkedin</a></span>, 
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className='lg:flex gap-10 justify-center'>
             <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <BsKeyboard className="mx-auto justify-center align-center" size={100} color={"grey"} />
               <h3 className='text-2xl py-1'>Languages</h3>
               <p>Javascript</p>
               <p>Python</p>
@@ -65,7 +65,7 @@ export default function Home() {
               <p>Markdown</p>
             </div>
             <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <BsKeyboard className="mx-auto justify-center align-center" size={100} color={"grey"} />
               <h3 className='text-2xl py-1'>Libraries and Frameworks</h3>
               <p>Node</p>
               <p>Express</p>
@@ -77,7 +77,7 @@ export default function Home() {
               <p>Materialize CSS</p>
             </div>
             <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-10 justify-center align-center" size={100} color={"grey"} />
+              <BsKeyboard className="mx-auto justify-center align-center" size={100} color={"grey"} />
               <h3 className='text-2xl py-1'>Interests</h3>
               <p>Up-to-date tech and coding practices </p>
               <p>Front-end web development</p>
@@ -89,8 +89,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-          <h3 className='text-3xl py-1'>Projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-80'>
+          <h3 className='text-center text-3xl py-1'>Projects</h3>
+            <p className='text-md text-center py-2 leading-8 text-gray-80'>
             Have a look at my deployed projects below! 
             <span className="text-teal-500"> Click </span>
             on their images to be taken to their deployed sites. Github source code locations are listed beneath each one.
