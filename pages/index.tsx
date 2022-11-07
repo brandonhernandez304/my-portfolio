@@ -11,11 +11,18 @@ import proj1 from '../public/proj-1.png';
 import proj3 from '../public/proj-3.png';
 import proj4 from '../public/proj-4.png';
 import { useState } from "react";
+import resume from '../public/resume.pdf';
 import type { ImageLoaderProps } from 'next/image';
 
 
 export default function Home() {
   const[darkMode, setDarkMode] = useState(false);
+  const [numPages, setNumPages] = useState(null);
+  const [pageNumber, setPageNumber] = useState(1);
+  function onDocumentLoadSuccess({ numPages }) {
+    setNumPages(numPages);
+  }
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -34,7 +41,11 @@ export default function Home() {
                 className='cursor-pointer text-xl dark:text-white' 
                 />
               </li>
-              <li><a className='bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-md ml-8' href="https://www.linkedin.com/in/brandon-a-hernandez/" target="_blank" rel="noopener noreferrer">Resume</a></li>
+              <li>
+                <a className='bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2 rounded-md ml-8' href="https://docs.google.com/document/d/1U0Jts9zh44vDCr74IKqhhV1GifnimF3264NwkVVJHws/edit" target="_blank" rel="noopener noreferrer">
+                  Resume
+                  </a>
+                </li>
             </ul>
           </nav>
           <div className='text-center p-10'>
