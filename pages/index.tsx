@@ -17,11 +17,6 @@ import type { ImageLoaderProps } from 'next/image';
 
 export default function Home() {
   const[darkMode, setDarkMode] = useState(false);
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -158,5 +153,6 @@ export default function Home() {
         </section>
       </main>
     </div>
+    // adding in to test git push
   )
 }
