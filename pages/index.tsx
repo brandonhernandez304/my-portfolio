@@ -3,6 +3,8 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BsKeyboard } from 'react-icons/bs';
+import { VscHeart } from 'react-icons/vsc';
+import { HiOutlineLibrary } from 'react-icons/hi';
 import Image from 'next/image';
 import headshot from '../public/headshot.jpeg';
 import proj1 from '../public/proj-1.png';
@@ -65,7 +67,7 @@ export default function Home() {
               <p>Markdown</p>
             </div>
             <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-auto justify-center align-center" size={100} color={"grey"} />
+              <HiOutlineLibrary className="mx-auto justify-center align-center" size={100} color={"grey"} />
               <h3 className='text-2xl py-1'>Libraries and Frameworks</h3>
               <p>Node</p>
               <p>Express</p>
@@ -77,7 +79,7 @@ export default function Home() {
               <p>Materialize CSS</p>
             </div>
             <div className='justify-center text-center shadow-lg p-10 rounded-xl my-10'>
-              <BsKeyboard className="mx-auto justify-center align-center" size={100} color={"grey"} />
+              <VscHeart className="mx-auto justify-center align-center" size={100} color={"grey"} />
               <h3 className='text-2xl py-1'>Interests</h3>
               <p>Up-to-date tech and coding practices </p>
               <p>Front-end web development</p>
