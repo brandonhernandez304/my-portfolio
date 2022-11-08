@@ -64,7 +64,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className='lg:flex items-stretch gap-10 justify-center'>
+          <div className='lg:flex justify-items-stretch gap-10 justify-center'>
             <div className='justify-center text-center w-full shadow-lg p-10 rounded-xl my-10'>
               <BsKeyboard className="mx-auto justify-center align-center min-w-screen text-slate-500 dark:text-amber-200" size={100} />
               <div className="dark:text-white">
@@ -114,8 +114,8 @@ export default function Home() {
             </p>
           </div>
           
-          <div className='flex flex-col items-stretch gap-10 py-10 lg:flex-row lg:flex'>
-          <div className='basis-1/4 flex-auto justify-center text-center h-full my-1 hover:basis-1/3 ease-out duration-300'>
+          <div className='flex flex-col justify-items-stretch gap-10 py-10 lg:flex-row lg:flex'>
+          <div className='basis-1/4 flex-auto justify-between text-center h-full my-1 hover:basis-1/3 ease-out duration-300'>
               <a href="https://project-1-superheroes.vercel.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj1} alt="project1" className='rounded-lg object-cover py-5 ' width={100} height={100} layout="responsive"/>
               </a>
@@ -124,7 +124,7 @@ export default function Home() {
                   <a href="https://github.com/brandonhernandez304/Project-1-Comic-Characters" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
                 </div>
             </div>   
-            <div className='basis-1/4 flex-auto justify-center text-center h-full my-1 hover:basis-1/3 ease-out duration-300'>
+            <div className='basis-1/4 flex-auto justify-between text-center h-full my-1 hover:basis-1/3 ease-out duration-300'>
               <a href="https://vibe-voyage.netlify.app/" target="_blank" rel="noopener noreferrer">
               <Image src={proj3} alt="project3" className='rounded-lg object-cover py-5 ' width={100} height={100} layout="responsive"/>
               </a>
@@ -133,7 +133,7 @@ export default function Home() {
                   <a href="https://github.com/brandonhernandez304/VibeVoyage-frontend" target="_blank" rel="noopener noreferrer">< FaGithubSquare /></a>
                 </div>      
             </div>
-            <div className='basis-1/4 flex-auto justify-center text-center hover:basis-1/3 ease-out duration-300'>
+            <div className='basis-1/4 flex-auto justify-between text-center hover:basis-1/3 ease-out duration-300'>
               <a href="https://neopets-ga-proj4.herokuapp.com/" target="_blank" rel="noopener noreferrer">
               <Image src={proj4} alt="project4" className='rounded-lg py-5 ' width={100} height={100} layout="responsive"/>
               </a>
